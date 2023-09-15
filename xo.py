@@ -33,7 +33,6 @@ def initial():
         else:
             print(3*'-' , " " , 3*'-' , " " , 3*'-' )
 
-
 def draw(table):
    i = 0
    while i < len(table):
@@ -56,6 +55,7 @@ def accurate(user_input , table):
         user_input = input()
         
     return user_input
+
 def turn(t):
     global user_input
     if t == 'x':
@@ -71,8 +71,6 @@ def turn(t):
                 table[i] = t
     #showing table again
     draw(table)
-
-
 
 def game():
     global table
@@ -112,8 +110,6 @@ def game():
             elif play_again == 'yes':
                 game()
 
-
-
 def check(xo):
     #check for 3 rows
     for i in range(3):
@@ -134,14 +130,5 @@ def game_draw(table):
             return False
     return True
 
-
-
 game()
 
-
-
-
-
-    
-
-    
